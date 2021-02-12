@@ -1,0 +1,3 @@
+#!/home/brunods/Documents/portfolio/health_insurence_cross_sell_project/pa004venv/bin/python3
+from numba.pycc import main
+main()
