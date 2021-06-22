@@ -4,6 +4,7 @@ import pandas as pd
 
 # Viz
 import seaborn as sns
+import matplotlib.pyplot as plt
 from scipy.stats import pointbiserialr
 from scipy.stats import chi2_contingency
 
@@ -53,7 +54,7 @@ class utils:
         else:
             return 'Faixa_maior_30'
         
-    def Myheat_map(self, dataset, variaveis):
+    def Myheat_map(dataset, variaveis):
 
         df_corr = dataset[variaveis].corr()
 
@@ -174,7 +175,7 @@ class utils:
         
         # Split Data
         Xtrain = data_train.drop(['response'], axis=1)
-    …    prec_k_pred = np.round(np.mean(prec_klist), 4).astype(str) + '+/-' + np.round(np.std(prec_k_list), 4).astype(str) 
+        prec_k_pred = np.round(np.mean(prec_klist), 4).astype(str) + '+/-' + np.round(np.std(prec_k_list), 4).astype(str) 
         rec_k_pred =  np.round(np.mean(rec_k_list), 4).astype(str) + '+/-' + np.round(np.std(prec_k_list), 4).astype(str)
         
         return pd.DataFrame({'Model name': model_name,
