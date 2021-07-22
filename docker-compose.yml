@@ -1,0 +1,12 @@
+version: '3'
+services:
+    jupyter-notebook:
+        build: .
+        image: my-jupyter-notebook
+        volumes: 
+            - ./data:/home/jovyan/work/data/
+            - ./healthinsurance:/home/jovyan/work/healthinsurance
+            - ./notebooks:/home/jovyan/work/
+        
+        ports:
+            - "8889:8888"

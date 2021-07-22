@@ -1,3 +1,0 @@
-#!/home/brunods/Documents/portfolio_github/health_insurence_cross_sell_project/penv/bin/python3
-from numba.pycc import main
-main()

@@ -5,7 +5,7 @@ matplotlib
 scipy
 scikit-plot
 scikit-learn
-BorutaShap
+#BorutaShap
 imblearn
 xgboost
 lightgbm
